@@ -1,4 +1,4 @@
-package com.test.pir_online;
+package com.test.pir_online.authenfication;
 
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;

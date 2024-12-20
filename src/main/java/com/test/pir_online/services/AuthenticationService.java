@@ -1,6 +1,6 @@
 package com.test.pir_online.services;
 
-import com.test.pir_online.ApiKeyAuthentication;
+import com.test.pir_online.authenfication.ApiKeyAuthentication;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.Authentication;

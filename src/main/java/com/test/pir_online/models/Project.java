@@ -25,17 +25,26 @@ public class Project {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
     private Long id;
 
+    @Column(name = "name", nullable = false)
     private String name;
+
+    @Column(name = "code", nullable = false)
     private String code;
+
+    @Column(name = "start_date", nullable = false)
     private LocalDate startDate;
+
+    @Column(name = "end_date", nullable = false)
     private LocalDate endDate;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private ProjectStatus status;
 
-    @ElementCollection
+    @ElementCollection(targetClass = Section.class)
     @CollectionTable(name = "project_sections", joinColumns = @JoinColumn(name = "project_id"))
     @Column(name = "section")
     @Enumerated(EnumType.STRING)

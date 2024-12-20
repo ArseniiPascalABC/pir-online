@@ -1,7 +1,7 @@
 package com.test.pir_online.configurations;
 
 
-import com.test.pir_online.AuthenticationFilter;
+import com.test.pir_online.authenfication.AuthenticationFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
